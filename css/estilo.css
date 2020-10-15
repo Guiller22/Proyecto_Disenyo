@@ -1,6 +1,7 @@
-body{
-    background-color: rgba( 76, 99, 21,1);
-}
+body {
+  background-image: url("https://www.logaster.com.es/blog/wp-content/uploads/sites/4/2019/01/4-min.jpg");
+  background-color: #cccccc;
+ }
 h1{
     font-family: 'Raleway', sans-serif;
     color: #4C6315;
