@@ -4,6 +4,8 @@ body {
  }
 h1 {
     color:rgba(132,161, 63,1) ;
+    background-color: green;
+    color: #84A13F ;
     font-family: 'Raleway', sans-serif;
   }
   
