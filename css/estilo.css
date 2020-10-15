@@ -1,28 +1,18 @@
 body {
   background-image: url("https://www.logaster.com.es/blog/wp-content/uploads/sites/4/2019/01/4-min.jpg");
-  background-color: #cccccc;
+  background-repeat: no-repeat;
  }
-h1{
-    font-family: 'Raleway', sans-serif;
-    color: #4C6315;
-}
 h1 {
     background-color: green;
     color: #84A13F ;
+    font-family: 'Raleway', sans-serif;
   }
   
-  div {
-    background-color: lightblue;
-  }
-  
-  p {
-    background-color: yellow;
-  }
-.color-primary-0 { color: #4C6315 }	/* Main Primary color */
+	/* .color-primary-0 { color: #4C6315 }Main Primary color 
 .color-primary-1 { color: #020300 }
 .color-primary-2 { color: #1E2B00 }
 .color-primary-3 { color: #84A13F }
-.color-primary-4 { color: #D6F392 }
+.color-primary-4 { color: #D6F392 }*/
 ol {
   list-style: none; /* Remove list bullets */
   padding: 0;
