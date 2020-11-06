@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .imagenes {
+        float: left;
+        width: 32%;
+        padding: 5px;
+        border: 1px solid green;
+        text-align: center;
+        margin: 3px;
+        box-shadow: 1px 2px 5px gray;
+    }
+
+    button {
+        width: 100%;
+        background-color: greenyellow;
+    }
+</style>
+
+<body>
+    <div class="imagenes" id="imagen1">Caja
+        <img src="img/img1.jpg" style="width:100%">
+        <button onclick="eliminar()">Eliminar</button>
+
+    </div>
+    <div class="imagenes" id="imagen2">Caja
+        <img src="img/img2.jpg" style="width:100%">
+        <button onclick="cambiar()">Cambiar</button>
+    </div>
+    <div class="imagenes" id="imagen3">Caja
+        <img src="img/img3.jpg" style="width:100%">
+        <button onclick="reset()">Resetear</button>
+    </div>
+</body>
+<script>
+    function eliminar() {
+      document.getElementById("imagen1").style.display = "none";
+    }
+    
+    function cambiar() {
+      document.getElementById("imagen2").style.visibility = "hidden";
+    }
+    
+    function reset() {
+      document.getElementById("imagen1").style.display = "block";
+      document.getElementById("imagen2").style.visibility = "visible";
+    }
+    </script>
+</html>

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpunit/php-timer": "^2.1",
+        "nesbot/carbon": "^2.41",
+        "foolz/inet": "^0.6.0"
+    }
+}
