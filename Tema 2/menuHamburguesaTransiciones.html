@@ -8,69 +8,77 @@
     <title>Document</title>
 </head>
 <style>
-    .btn {
-        background-color: grey;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        width: 160px;
-    }
+    .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
-    .menu {
-        display: none;
-        position: absolute;
-        top: 0px;
-    }
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
 
-    .contenedor {
-        position: relative;
-        display: inline-block;
-        box-shadow: 4px 2px 3px solid black;
-        width: 160px;
-    }
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-    .menu a {
-        display: block;
-        text-decoration: none;
-        color: white;
-        padding: 12px 16px;
-        background-color: grey;
-        box-shadow: 4px 2px 3px solid grey;
-    }
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 </style>
 <script>
     function openNav() {
-        document.getElementById("menu").style.width = "100%";
+      document.getElementById("myNav").style.width = "100%";
     }
-
+    
     function closeNav() {
-        document.getElementById("menu").style.width = "0%";
+      document.getElementById("myNav").style.width = "0%";
     }
-</script>
+    </script>
 
 <body>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h1>Menu</h1>
-        <div class="contenedor">
-
-            <span class="material-icons">
-                menu
-            </span>
-
-            <div class="menu">
-
-                <a href=#>Link 1</a>
-                <a href=#>Link 2</a>
-                <a href=#>Link 3</a>
-                <a href=#>Link 4</a>
-
-            </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 </body>
 
 </html>

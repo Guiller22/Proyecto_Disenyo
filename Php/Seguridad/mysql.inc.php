@@ -2,7 +2,7 @@
 # estas son las variables anteriores
 $mysql_server="localhost";
 $mysql_login="guille";
-$mysql_pass="guille";
+$mysql_pass="VaQ2201!";
 # creemos una nueva variable $c sin asignarle ningún valor
 # para que pueda recoger el identificador de conexión
 # una vez que se haya establecido esta
