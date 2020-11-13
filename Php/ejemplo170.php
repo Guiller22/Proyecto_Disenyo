@@ -17,7 +17,6 @@ $v6="M";
 $v7=date("h:i:s"); 
 $v8="\n"; 
 $v9=7; 
-
 # establecemos la conexion con el servidor 
 
 $c=mysqli_connect("localhost","guille","VaQ2201!"); 
