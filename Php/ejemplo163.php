@@ -19,7 +19,7 @@ $crear="CREATE TABLE IF NOT EXISTS ";
 # añadiremos el nombre de la tabla que será ejemplo1
 # fijate en el punto (concatenador de cadenas) que permite
 # ir añadiendo a la cadena anterior
-$crear .="ejemplo2 ";
+$crear .="tabla1 ";
 #ahora pongamos el paréntesis (con un espacio delante)
 #aunque el espacio también podría detrás de ejemplo1 
 $crear .="( ";

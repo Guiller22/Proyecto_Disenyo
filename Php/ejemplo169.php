@@ -5,7 +5,7 @@ $base="proyecto_guille";
 
 # recogemos en una variable el nombre de la TABLA
 
-$tabla="demo4";
+$tabla="tabla1";
 
 # establecemos la conexion con el servidor
 

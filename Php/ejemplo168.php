@@ -3,7 +3,7 @@ $base="proyecto_guille";
 
 #definimos otra variable con el NOMBRE QUE QUEREMOS DAR A LA TABLA
 
-$tabla="demo4";
+$tabla="tabla1";
 
 # establecemos la conexión con el servidor
 
