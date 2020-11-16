@@ -12,7 +12,7 @@ $base="proyecto_guille";
 
 # establecemos la conexión con el servidor
 
-$c=mysqli_connect ("localhost","Guille","VaQ2201!");
+$c=mysqli_connect ("localhost","guille","VaQ2201!");
 
 #Seleccionamos la BASE DE DATOS en la que PRETENDEMOS TRABAJAR
 
