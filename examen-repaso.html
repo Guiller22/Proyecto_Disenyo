@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+
+    #navbar {
+        overflow: hidden;
+        background-color: #333;
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+    .btn {
+        background-color: grey;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 160px;
+    }
+
+    .menu{
+        display: none;
+        top: 0px;
+    }
+    
+    .contenedor{
+        box-shadow: 4px 2px 3px solid black;
+        width: 160px;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .menu a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 12px 16px;
+        background-color: grey;
+        box-shadow: 4px 2px 3px solid grey;
+    }
+
+    .contenedor:hover .menu{
+        display: block;
+    }
+
+    .menu a:hover {
+        background-color: grey;
+        }
+
+    .row {
+        float: left;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    
+    .column img {
+        vertical-align: middle;
+    }
+
+    
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <a href="#home">Prueba</a>
+        <a href="#news">Prueba</a>
+        <a href="#contact">Prueba</a>
+    </div>
+    <hr>
+    <div class="contenedor">
+        <span class="material-icons">
+            menu
+            </span>
+        <div class="menu">
+            <a href=#>Link 1</a>
+            <a href=#>Link 2</a>
+            <a href=#>Link 3</a>
+            <a href=#>Link 4</a>
+
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+            <div><img src="otono.jpg"></div>
+        </div>
+    </div>
+        <div class="footer">
+            <p>Pie de pagina</p>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: green;
+        padding: 30px;
+    }
+
+    header>h2 {
+        text-align: center;
+    }
+
+    .navbar {
+        float: left;
+        width: 30%;
+    }
+
+
+
+    .btn {
+        background-color: grey;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 160px;
+    }
+
+    .menu {
+        display: none;
+        top: 0px;
+    }
+
+    .contenedor {
+        float: left;
+        display: inline-block;
+        box-shadow: 4px 2px 3px solid black;
+        width: 160px;
+    }
+
+    nav::after {
+        clear: both;
+    }
+
+    .menu a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 12px 16px;
+        background-color: grey;
+        box-shadow: 4px 2px 3px solid grey;
+    }
+
+    .contenedor:hover .menu {
+        display: block;
+    }
+
+    .menu a:hover {
+        background-color: grey;
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+
+    }
+
+    .prueba img {
+        border-radius: 50%;
+        width: 10%;
+        float: left;
+        margin-right: 2px;
+
+    }
+
+    .titulo h1 {
+
+        padding-top: 20px;
+        text-align: center;
+
+    }
+
+    .dot {
+        float: right;
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+
+        nav,
+        article {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h2>Cities</h2>
+
+        <div class="contenedor">
+
+            <span class="material-icons">
+                menu
+            </span>
+
+            <div class="menu">
+
+                <a href=#>Link 1</a>
+                <a href=#>Link 2</a>
+                <a href=#>Link 3</a>
+                <a href=#>Link 4</a>
+
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <article>
+            <div class="prueba">
+                <img src="imagen.jpg">
+            </div>
+            <div class="titulo">
+                <h1>London</h1>
+            </div>
+            <span class="dot">1</span>
+
+
+
+        </article>
+    </section>
+    </section>
+</body>
+
+</html>
