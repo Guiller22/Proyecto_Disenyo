@@ -4,6 +4,7 @@
 --
 Create database cinema;
 Use cinema;
+
 CREATE TABLE IF NOT EXISTS `horarios` (
   `Horario` time NOT NULL,
   `Precio` double(8,2) DEFAULT NULL,
