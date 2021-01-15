@@ -45,7 +45,6 @@
 
     .contenedor {
         float: left;
-        display: inline-block;
         box-shadow: 4px 2px 3px solid black;
         width: 160px;
     }
@@ -74,8 +73,9 @@
     article {
         float: left;
         padding: 20px;
-        width: 70%;
         background-color: #f1f1f1;
+        width: 100%;
+        height: 50%;
 
     }
 
@@ -102,12 +102,29 @@
         border-radius: 50%;
         text-align: center;
     }
+    .hora{
+        width: 10%;
+        float: right;
+    }
 
-    @media (max-width: 600px) {
+    footer {
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        color: black;
+    }
+
+
+    @media (max-width: 700px) {
 
         nav,
         article {
-            width: 100%;
+            width: 50%;
             height: auto;
         }
     }
@@ -142,6 +159,34 @@
             <div class="titulo">
                 <h1>London</h1>
             </div>
+            <div class="hora">
+                <p>time</p>
+                <span class="dot">1</span>
+            </div>
+            
+
+
+
+        </article>
+        <article>
+            <div class="prueba">
+                <img src="imagen.jpg">
+            </div>
+            <div class="titulo">
+                <h1>London</h1>
+            </div>
+            <span class="dot">1</span>
+
+
+
+        </article>
+        <article>
+            <div class="prueba">
+                <img src="imagen.jpg">
+            </div>
+            <div class="titulo">
+                <h1>London</h1>
+            </div>
             <span class="dot">1</span>
 
 
@@ -149,6 +194,7 @@
         </article>
     </section>
     </section>
+    
 </body>
 
 </html>
