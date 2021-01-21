@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    /*aplicar borde de caja a todo el html , misma fuente y margen 0*/
+    * {
+        box-sizing: border-box;
+        font-family: cursive;
+        margin: 0;
+    }
+    .imagen{
+        width: 30%;
+    }
+
+    header {
+        background-color: green;
+        display: flex;
+        padding: 20px;
+    }
+
+    header .nombreAPP {
+        float: right;
+    }
+
+    .btn {
+        background-color: grey;
+        color: white;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+    }
+
+    .contenedor {
+        position: relative;
+        display: inline-block;
+        box-shadow: 4px 2px 3px solid black;
+        width: 160px;
+    }
+
+    header .menuhamburguesa {
+        display: none;
+    }
+    .section-main{
+        width: 50%;
+    }
+    .section-contenedor{
+        width:auto;
+    }
+    .menu a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background-color: green;
+        box-shadow: 4px 2px 3px solid grey;
+    }
+
+    .contenedor:hover .menu {
+        display: block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(117, 177, 27);
+    }
+
+    nav {
+        display: flex;
+        background-color: rgb(9, 80, 9);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+    }
+
+    .buscador {
+        float: right;
+    }
+
+
+
+    .contenedor-mensaje {
+        background-color: #88cf73;
+        width: 50%;
+        display: flex;
+        padding: 10px;
+    }
+
+    .mensaje-izq {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .mensaje-centro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mensaje-dch {
+        width: 100%;
+    }
+
+    .mensaje-dch img {
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .contenedor-img {
+        width: 100px;
+    }
+
+    .btn-float {
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
+    }
+
+    .contenedor-mensaje .mensaje-izq {
+        width: 33%;
+    }
+
+    .btn-float button {
+        padding: 10px;
+        background-color: #73dae7;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0px 0px 8px 1px gray;
+        transition: background-color, color 0.5s;
+    }
+
+    .btn-float button:hover {
+        background-color: rgb(36, 150, 221);
+        color: white;
+    }
+
+    .section-contenedor {
+        width: 50%;
+    }
+    .contenedor-main{
+        width: 50%;
+        display: flex;
+    }
+
+    /*media query para distintas vistas*/
+    @media screen and (min-width: 601px) {
+        main {
+            display: flex;
+            height: 100%;
+        }
+
+        main .contenedor-mensaje {
+            width: 100%;
+        }
+    }
+
+    .imagen {
+        border-radius: 50%;
+    }
+    @media screen and (max-width: 600px){
+        header {
+        display: block;
+        margin-right: 10px;
+        margin-left: 0px;
+        padding: 10px;
+        border-radius: 50px;
+        width: 50px;
+        background-color: unset;
+        color: inherit;
+        border: none;
+    }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="contenedor">
+
+            <span class="material-icons">
+                menu
+            </span>
+
+            <div class="menu">
+                <a href=#>Enlace a 1 pagina</a>
+                <a href=#>Enlace a 2 pagina</a>
+                <a href=#>Enlace a 3 pagina</a>
+            </div>
+            <div class="nombreAPP">
+                MYENTERPRISE
+            </div>
+    </header>
+    <nav>
+        <a class="camera" href="#"><span class="material-icons">camera_alt</span></a>
+        <a href="#">CHAT</a>
+        <a href="#">ESTADO</a>
+        <a href="#">TELÉFONO</a>
+        <input class="buscador" type="text" placeholder="Search..">
+    </nav>
+    <main>
+        <div class="contenedor-mensaje">
+            <div class="mensaje-izq">
+                <span class="material-icons">
+                    check_circle
+                </span>
+                <div class="hora">16:00</div>
+            </div>
+            <div class="mensaje-centro">
+                <div class="title">Some text</div>
+                <div class="desc">Extra text about anything</div>
+            </div>
+            <div class="mensaje-dch">
+                <img src="otono.jpg">
+            </div>
+            <div class="contenedor-mensaje">
+                <div class="mensaje-izq">
+                    <span class="material-icons">
+                        check_circle
+                    </span>
+                    <div class="hora">16:00</div>
+                </div>
+                <div class="mensaje-centro">
+                    <div class="title">Some text</div>
+                    <div class="desc">Extra text about anything</div>
+                </div>
+                <div class="mensaje-dch">
+                    <img src="otono.jpg">
+                </div>
+                <div class="contenedor-mensaje">
+                    <div class="mensaje-izq">
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+                        <div class="hora">16:00</div>
+                    </div>
+                    <div class="mensaje-centro">
+                        <div class="title">Some text</div>
+                        <div class="desc">Extra text about anything</div>
+                    </div>
+                    <div class="mensaje-dch">
+                        <img src="otono.jpg">
+                    </div>
+                </div>
+                </div>
+                <div class="contenedor-main">
+                    <div class="search">
+                        <div class="btn-float">
+                            <button>
+                                <span class="material-icons">email</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="section-main">
+                        <div class="section-contenedor">
+                            <div class="imagen">
+                                <img src="otono.jpg">
+                            </div>
+                            <div class="section-header">Aqui se puede escribir algo</div>
+                        </div>
+                        <div class="section-info">
+                            <div class="section-header">Imagen con texto</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
